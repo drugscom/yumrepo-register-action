@@ -17,7 +17,7 @@ async function getFileCommit(git: SimpleGit, file: string): Promise<string | und
 
 async function putSDBAttributes(sdb: AWS.SimpleDB, domain, spec: string, attributes: Map<string, string>): Promise<void> {
   const itemName = path.join(github.context.repo.owner, github.context.repo.repo, github.context.ref, spec)
-  core.debug(`Writing to SimpleDB domain "${domain}", key "${itemName}": ${JSON.stringify(attributes)}`)
+  core.debug(`Writing to SimpleDB domain "${domain}", key "${itemName}": ${attributes}`)
 
   return new Promise(resolve => {
     for (const [Name, Value] of attributes) {
@@ -58,6 +58,7 @@ async function run(): Promise<void> {
         core.setFailed(`Failed to retrieve commit hash for "${spec}"`)
         continue
       }
+      core.debug(`File commit hash for "${spec}": ${specHash}`)
 
       await putSDBAttributes(simpleDB, sdbDomain, spec, new Map<string, string>([
         ["commit_sha", specHash],

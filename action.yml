@@ -1,0 +1,13 @@
+name: 'Register new package builds to AWS SDB'
+description: 'This action registers new package builds to AWS SDB'
+inputs:
+  spec:
+    description: 'Path to the spec successfully built'
+    required: true
+  sdb-domain:
+    description: 'AWS SimpleDB domain'
+    required: false
+    default: 'packages'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

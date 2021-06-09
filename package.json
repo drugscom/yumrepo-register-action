@@ -1,0 +1,43 @@
+{
+  "name": "yumrepo-register-action",
+  "version": "1.0.0",
+  "description": "Register new package builds to AWS SDB",
+  "main": "lib/main.js",
+  "types": "lib/main.d.ts",
+  "scripts": {
+    "build": "tsc && ncc build --transpile-only",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://asenci@github.com/drugscom/yumrepo-register-action.git"
+  },
+  "keywords": [
+    "github",
+    "actions",
+    "rpm",
+    "sdb"
+  ],
+  "author": "Drugs.com",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/drugscom/yumrepo-register-action/issues"
+  },
+  "homepage": "https://github.com/drugscom/yumrepo-register-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.3.0",
+    "@actions/github": "^5.0.0",
+    "@actions/utils": "git+https://github.com/drugscom/actions-utils.git",
+    "aws-sdk": "^2.918.0",
+    "simple-git": "^2.39.0"
+  },
+  "private": true,
+  "devDependencies": {
+    "@types/node": "^15.6.1",
+    "@typescript-eslint/parser": "^4.26.0",
+    "@vercel/ncc": "^0.28.5",
+    "eslint": "^7.26.0",
+    "eslint-plugin-github": "^4.1.3",
+    "typescript": "^4.3.2"
+  }
+}

@@ -46,7 +46,7 @@ async function putSDBAttributes(sdb: AWS.SimpleDB, domain, spec: string, attribu
 async function run(): Promise<void> {
   try {
     const specs = utils.getInputAsArray('spec')
-    const sdbDomain = utils.getInputAsString('sdb-domain')
+    const sdbDomain = core.getInput('sdb-domain')
 
     const workingDir = process.env['GITHUB_WORKSPACE'] ? process.env['GITHUB_WORKSPACE'] : process.cwd()
     const git = simpleGit({baseDir: workingDir})

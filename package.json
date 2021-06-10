@@ -1,6 +1,6 @@
 {
   "name": "yumrepo-register-action",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Register new package builds to AWS SDB",
   "main": "lib/main.js",
   "types": "lib/main.d.ts",

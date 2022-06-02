@@ -28,7 +28,7 @@
     "@actions/core": "^1.8.2",
     "@actions/github": "^5.0.1",
     "@actions/utils": "git+https://github.com/drugscom/actions-utils.git",
-    "aws-sdk": "^2.1146.0",
+    "aws-sdk": "^2.1147.0",
     "simple-git": "^3.7.1"
   },
   "private": true,

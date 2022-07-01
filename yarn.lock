@@ -9,7 +9,7 @@
   dependencies:
     "@actions/http-client" "^2.0.1"
 
-"@actions/github@^5.0.1", "@actions/github@^5.0.3":
+"@actions/github@^5.0.3":
   version "5.0.3"
   resolved "https://registry.yarnpkg.com/@actions/github/-/github-5.0.3.tgz#b305765d6173962d113451ea324ff675aa674f35"
   integrity sha512-myjA/pdLQfhUGLtRZC/J4L1RXOG4o6aYdiEq+zr5wVVKljzbFld+xv10k1FX6IkIJtNxbAq44BdwSNpQ015P0A==
@@ -403,10 +403,10 @@ astral-regex@^2.0.0:
   resolved "https://registry.yarnpkg.com/astral-regex/-/astral-regex-2.0.0.tgz#483143c567aeed4785759c0865786dc77d7d2e31"
   integrity sha512-Z7tMw1ytTXt5jqMcOP+OQteU1VuNK9Y02uuJtKQ1Sv69jXQKKg5cibLwGJow8yzZP+eAc18EmLGPal0bp36rvQ==
 
-aws-sdk@^2.1147.0:
-  version "2.1147.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1147.0.tgz#5d279abee153a0627ae502cdbb57d321388b534c"
-  integrity sha512-+CO8FnBgqHgxMJH0s8fv17Xqrh6V0lJ8zKOt3lHU+8QTiSoX5aLgr8zwmi0m7msHtyVeDWh50kiWAlvUs7U8Gw==
+aws-sdk@^2.1166.0:
+  version "2.1166.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1166.0.tgz#9bc5ceb3690d2747b941a2e2b8ebacfffb412f41"
+  integrity sha512-9CJQpMtIv2sxvwYTcMCfuCGU8t5qEppnvmo0uFFOm+1Q1uEv5sPg95wQH3Gfj4Mmv4FKWFofgTLksn0u2pDxsw==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
